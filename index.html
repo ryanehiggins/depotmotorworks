@@ -229,22 +229,31 @@
     </div>
   </section>
 
+
   <section class="section signup" id="dispatch">
     <div class="container signup-grid">
       <div>
         <div class="eyebrow">The Depot Dispatch</div>
         <h2 class="section-title">Join us as the Depot takes shape.</h2>
         <p class="copy">
-          Receive progress updates, Car Stories features, service announcements,
-          upcoming events, guest-speaker previews, and behind-the-scenes news from Butler.
+          Sign up for progress updates, Car Stories, JDM news, upcoming events,
+          guest-speaker previews, and behind-the-scenes updates from Butler.
         </p>
         <p class="copy">
-          No spam and no constant sales pitch—just interesting cars, good people,
-          and the story of The Depot coming to life.
+          We are not scheduling service yet. For now, this is the place to follow the build,
+          tell us what interests you, and be among the first to know when the doors are ready to open.
         </p>
+
+        <div class="contact-block">
+          <div class="contact-label">Call or text</div>
+          <a class="contact-phone" href="tel:+12622289782">(262) 228-9782</a>
+          <a class="contact-email" href="mailto:info@thedepotmotorworks.com">info@thedepotmotorworks.com</a>
+        </div>
       </div>
 
       <form class="form" action="https://formspree.io/f/xwlepbaa" method="post">
+        <input type="hidden" name="_subject" value="New Depot Dispatch signup">
+        <input type="hidden" name="source" value="The Depot Motorworks website">
         <div class="form-grid">
           <div>
             <label for="name">First name</label>
@@ -258,7 +267,7 @@
             <label for="interest">What interests you most?</label>
             <select id="interest" name="interest">
               <option>Following the build</option>
-              <option>Automotive service</option>
+              <option>Future automotive service</option>
               <option>JDM sourcing and importing</option>
               <option>Car Stories</option>
               <option>Events and workshops</option>
@@ -266,22 +275,23 @@
             </select>
           </div>
           <div>
-            <label for="message">What would bring you to the Depot?</label>
-            <textarea id="message" name="message"></textarea>
+            <label for="message">Anything you’d like us to know?</label>
+            <textarea id="message" name="message" placeholder="Cars you own, events you’d like to see, future service interest, or just say hello."></textarea>
           </div>
           <button class="button button-primary" type="submit">Join the Depot List</button>
         </div>
-        <p class="form-note">Replace the Formspree form ID before launch so submissions reach your inbox.</p>
+        <p class="form-note">Updates only. No service appointment is being scheduled by this form.</p>
       </form>
     </div>
   </section>
+
 </main>
 
 <footer>
   <div class="container footer-inner">
     <div><strong>The Depot Motorworks</strong><br>Butler, Wisconsin</div>
     <div>Service · Preservation · Community<br>Operated by RH9 Enterprises LLC</div>
-    <div class="domain">TheDepotMotorworks.com</div>
+    <div class="footer-contact"><strong>Call or text</strong><br><a href="tel:+12622289782">(262) 228-9782</a><br><a href="mailto:info@thedepotmotorworks.com">info@thedepotmotorworks.com</a><br><span class="domain">TheDepotMotorworks.com</span></div>
   </div>
 </footer>
 <script src="js/main.js"></script>

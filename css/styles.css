@@ -396,6 +396,47 @@ textarea { min-height: 108px; resize: vertical; }
 .feature h3 { margin: 0 0 10px; color: #fff; }
 .feature p { margin: 0; color: var(--muted); }
 
+
+.contact-block {
+  margin-top: 34px;
+  padding-top: 25px;
+  border-top: 1px solid rgba(20,20,20,.22);
+}
+.contact-label {
+  margin-bottom: 4px;
+  color: var(--copper-dark);
+  font-size: .78rem;
+  font-weight: 850;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+}
+.contact-phone {
+  display: block;
+  width: fit-content;
+  color: #111;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2rem, 4vw, 3.15rem);
+  font-weight: 700;
+  letter-spacing: -.035em;
+  line-height: 1.05;
+}
+.contact-email {
+  display: block;
+  width: fit-content;
+  margin-top: 9px;
+  color: #29231d;
+  font-weight: 750;
+}
+.contact-phone:hover,
+.contact-email:hover { text-decoration: underline; }
+
+.footer-contact { line-height: 1.7; }
+.footer-contact a { color: var(--paper); }
+.footer-contact .domain {
+  display: inline-block;
+  margin-top: 5px;
+}
+
 footer {
   padding: 42px 0;
   color: var(--muted);
