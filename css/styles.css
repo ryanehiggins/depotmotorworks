@@ -396,47 +396,6 @@ textarea { min-height: 108px; resize: vertical; }
 .feature h3 { margin: 0 0 10px; color: #fff; }
 .feature p { margin: 0; color: var(--muted); }
 
-
-.contact-block {
-  margin-top: 34px;
-  padding-top: 25px;
-  border-top: 1px solid rgba(20,20,20,.22);
-}
-.contact-label {
-  margin-bottom: 4px;
-  color: var(--copper-dark);
-  font-size: .78rem;
-  font-weight: 850;
-  letter-spacing: .15em;
-  text-transform: uppercase;
-}
-.contact-phone {
-  display: block;
-  width: fit-content;
-  color: #111;
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(2rem, 4vw, 3.15rem);
-  font-weight: 700;
-  letter-spacing: -.035em;
-  line-height: 1.05;
-}
-.contact-email {
-  display: block;
-  width: fit-content;
-  margin-top: 9px;
-  color: #29231d;
-  font-weight: 750;
-}
-.contact-phone:hover,
-.contact-email:hover { text-decoration: underline; }
-
-.footer-contact { line-height: 1.7; }
-.footer-contact a { color: var(--paper); }
-.footer-contact .domain {
-  display: inline-block;
-  margin-top: 5px;
-}
-
 footer {
   padding: 42px 0;
   color: var(--muted);
@@ -481,3 +440,182 @@ footer strong { color: var(--paper); }
   .hero h1 { font-size: 3.65rem; }
   .header-inner > .button { display: none; }
 }
+
+
+.contact-block {
+  margin-top: 34px;
+  padding-top: 25px;
+  border-top: 1px solid rgba(20,20,20,.22);
+}
+.contact-label {
+  margin-bottom: 4px;
+  color: var(--copper-dark);
+  font-size: .78rem;
+  font-weight: 850;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+}
+.contact-phone {
+  display: block;
+  width: fit-content;
+  color: #111;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2rem, 4vw, 3.15rem);
+  font-weight: 700;
+  letter-spacing: -.035em;
+  line-height: 1.05;
+}
+.contact-email {
+  display: block;
+  width: fit-content;
+  margin-top: 9px;
+  color: #29231d;
+  font-weight: 750;
+}
+.contact-phone:hover, .contact-email:hover { text-decoration: underline; }
+.footer-contact { line-height: 1.7; }
+.footer-contact a { color: var(--paper); }
+.footer-contact .domain { display: inline-block; margin-top: 5px; }
+
+.nav-feature {
+  padding: 8px 13px;
+  border: 1px solid rgba(213,154,87,.52);
+  border-radius: 999px;
+  color: var(--paper) !important;
+  background: rgba(213,154,87,.09);
+}
+.nav-feature:hover {
+  border-color: var(--copper);
+  background: rgba(213,154,87,.17);
+}
+.card-topline {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+.available-card {
+  border-color: rgba(213,154,87,.62);
+  background: linear-gradient(155deg, rgba(213,154,87,.14), #1b2226 52%);
+}
+.available-badge {
+  padding: 6px 9px;
+  border-radius: 999px;
+  color: #16120d;
+  background: var(--copper);
+  font-size: .69rem;
+  font-weight: 900;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.accent-text { color: var(--copper); }
+.carplay-hero {
+  background:
+    radial-gradient(circle at 77% 22%, rgba(213,154,87,.19), transparent 26%),
+    linear-gradient(135deg, #151d20 0%, #080b0c 62%);
+}
+.carplay-intro { background: #0f1315; }
+.feature-kicker {
+  display: inline-block;
+  margin-bottom: 25px;
+  color: var(--copper);
+  font-size: .8rem;
+  font-weight: 900;
+  letter-spacing: .14em;
+}
+.carplay-features .feature { min-height: 235px; }
+.compatibility {
+  background: #f1ede3;
+  color: #17191a;
+}
+.compatibility .eyebrow { color: var(--copper-dark); }
+.compatibility .copy { color: #59574f; }
+.compatibility-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 34px 0 22px;
+}
+.compatibility-row span {
+  padding: 12px 18px;
+  border: 1px solid rgba(20,20,20,.18);
+  border-radius: 999px;
+  background: rgba(255,255,255,.38);
+  font-weight: 850;
+}
+.disclaimer {
+  max-width: 850px;
+  color: #6a675f;
+  font-size: .9rem;
+}
+.field-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+.vehicle-grid {
+  display: grid;
+  grid-template-columns: .65fr 1fr 1fr;
+  gap: 15px;
+}
+.optional { color: #939794; font-weight: 500; }
+.file-input { padding: 10px; cursor: pointer; }
+.file-input::file-selector-button {
+  margin-right: 12px;
+  padding: 8px 12px;
+  border: 0;
+  border-radius: 8px;
+  background: var(--copper);
+  color: #111;
+  font-weight: 800;
+  cursor: pointer;
+}
+.input-help {
+  margin: 7px 2px 0;
+  color: #979b99;
+  font-size: .78rem;
+}
+@media (max-width: 650px) {
+  .field-row, .vehicle-grid { grid-template-columns: 1fr; }
+  .nav-feature { border-radius: 12px; text-align: center; }
+}
+
+
+/* Version 2: service-led positioning + OEM+ technology portfolio */
+.hero-kicker { margin: 24px 0 0; color: var(--copper); font-size: clamp(1.15rem,2.3vw,1.65rem); font-weight: 850; letter-spacing: .01em; }
+.header-carplay { white-space: nowrap; }
+.specialty-card { background: linear-gradient(160deg,#1b2226,#171d20); }
+.anchor-offset { position:absolute; transform:translateY(-100px); }
+
+.carplay-hero-grid { display:grid; grid-template-columns: 1.03fr .97fr; gap:56px; align-items:center; }
+.carplay-photo-hero { padding-bottom:80px; }
+.carplay-photo-hero h1 { max-width:760px; }
+.hero-install-photo { margin:0; overflow:hidden; border:1px solid rgba(255,255,255,.18); border-radius:28px; box-shadow:var(--shadow); background:#111; aspect-ratio:4/5; }
+.hero-install-photo img { height:100%; object-fit:cover; object-position:center; }
+.trust-badges { display:flex; flex-wrap:wrap; gap:10px; margin:25px 0 29px; }
+.trust-badges span { padding:8px 12px; border:1px solid rgba(213,154,87,.45); border-radius:999px; color:#eadbc7; background:rgba(213,154,87,.08); font-size:.78rem; font-weight:800; }
+.real-work { background:#101416; }
+.before-after-grid, .wide-install-grid { display:grid; grid-template-columns:1fr 1fr; gap:22px; margin-top:40px; }
+.wide-install-grid { margin-top:22px; }
+.install-card { position:relative; margin:0; overflow:hidden; border:1px solid var(--line); border-radius:22px; background:#171d20; box-shadow:var(--shadow); }
+.install-card img { width:100%; height:520px; object-fit:cover; }
+.wide-install-grid .install-card img { height:430px; }
+.install-card figcaption { padding:14px 17px 17px; color:var(--muted); font-size:.92rem; }
+.photo-label { position:absolute; z-index:2; top:15px; left:15px; padding:7px 11px; border-radius:999px; color:#fff; background:rgba(7,9,10,.82); font-size:.75rem; font-weight:900; letter-spacing:.1em; text-transform:uppercase; }
+.photo-label.after { color:#111; background:var(--copper); }
+.upgrade-options { background:#12181b; }
+.project-gallery { background:#0d1113; }
+.gallery-grid { display:grid; grid-template-columns:repeat(12,1fr); gap:18px; margin-top:40px; }
+.gallery-grid figure { grid-column:span 4; margin:0; overflow:hidden; border:1px solid var(--line); border-radius:20px; background:#171d20; }
+.gallery-grid .gallery-feature { grid-column:span 8; }
+.gallery-grid img { height:340px; object-fit:cover; }
+.gallery-grid .gallery-feature img { height:480px; }
+.gallery-grid figcaption { padding:12px 14px; color:var(--muted); font-size:.9rem; }
+.interest-checks { display:grid; grid-template-columns:1fr 1fr; gap:10px 15px; margin:0; padding:15px; border:1px solid var(--line); border-radius:12px; }
+.interest-checks legend { padding:0 8px; color:var(--muted); font-size:.84rem; font-weight:750; }
+.interest-checks label { display:flex; align-items:center; gap:9px; margin:0; color:var(--paper); font-weight:600; }
+.interest-checks input { width:auto; }
+@media (max-width: 1050px) { .header-inner { gap:14px; } .nav-links { gap:15px; font-size:.86rem; } .header-carplay { padding:0 16px; font-size:.86rem; } }
+@media (max-width: 940px) { .carplay-hero-grid { grid-template-columns:1fr; } .hero-install-photo { max-width:650px; aspect-ratio:16/10; } .gallery-grid figure,.gallery-grid .gallery-feature { grid-column:span 6; } }
+@media (max-width: 650px) { .before-after-grid,.wide-install-grid,.interest-checks { grid-template-columns:1fr; } .install-card img,.wide-install-grid .install-card img { height:auto; max-height:520px; } .gallery-grid figure,.gallery-grid .gallery-feature { grid-column:1/-1; } .gallery-grid img,.gallery-grid .gallery-feature img { height:auto; } }
