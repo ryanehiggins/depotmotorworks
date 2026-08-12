@@ -613,7 +613,7 @@ select:disabled { opacity:.66; cursor:not-allowed; }
 .diagnostics-hero {
   position:relative;
   overflow:hidden;
-  padding:165px 0 92px;
+  padding:310px 0 92px;
   background:radial-gradient(circle at 82% 30%,rgba(213,154,87,.20),transparent 27%),linear-gradient(118deg,#171d20 0%,#0a0d0f 62%);
 }
 .diagnostics-hero::after { content:""; position:absolute; width:650px; height:650px; right:-260px; bottom:-310px; border:1px solid rgba(213,154,87,.18); border-radius:50%; box-shadow:0 0 0 85px rgba(213,154,87,.025),0 0 0 175px rgba(213,154,87,.016); }
@@ -642,7 +642,7 @@ select:disabled { opacity:.66; cursor:not-allowed; }
   .diagnostics-process { grid-template-columns:1fr 1fr; }
 }
 @media (max-width:650px) {
-  .diagnostics-hero { padding:130px 0 72px; }
+  .diagnostics-hero { padding:240px 0 72px; }
   .diagnostics-principle-box { padding:32px 24px; }
   .diagnostics-process { grid-template-columns:1fr; }
 }
