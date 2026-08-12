@@ -477,17 +477,6 @@ footer strong { color: var(--paper); }
 .footer-contact a { color: var(--paper); }
 .footer-contact .domain { display: inline-block; margin-top: 5px; }
 
-.nav-feature {
-  padding: 8px 13px;
-  border: 1px solid rgba(213,154,87,.52);
-  border-radius: 999px;
-  color: var(--paper) !important;
-  background: rgba(213,154,87,.09);
-}
-.nav-feature:hover {
-  border-color: var(--copper);
-  background: rgba(213,154,87,.17);
-}
 .card-topline {
   display: flex;
   align-items: flex-start;
@@ -562,13 +551,11 @@ footer strong { color: var(--paper); }
 .optional { color: #939794; font-weight: 500; }
 @media (max-width: 650px) {
   .field-row, .vehicle-grid { grid-template-columns: 1fr; }
-  .nav-feature { border-radius: 12px; text-align: center; }
 }
 
 
 /* Version 2: service-led positioning + OEM+ technology portfolio */
 .hero-kicker { margin: 24px 0 0; color: var(--copper); font-size: clamp(1.15rem,2.3vw,1.65rem); font-weight: 850; letter-spacing: .01em; }
-.header-carplay { white-space: nowrap; }
 .specialty-card { background: linear-gradient(160deg,#1b2226,#171d20); }
 .anchor-offset { position:absolute; transform:translateY(-100px); }
 
@@ -600,24 +587,12 @@ footer strong { color: var(--paper); }
 .interest-checks legend { padding:0 8px; color:var(--muted); font-size:.84rem; font-weight:750; }
 .interest-checks label { display:flex; align-items:center; gap:9px; margin:0; color:var(--paper); font-weight:600; }
 .interest-checks input { width:auto; }
-@media (max-width: 1050px) { .header-inner { gap:14px; } .nav-links { gap:15px; font-size:.86rem; } .header-carplay { padding:0 16px; font-size:.86rem; } }
+@media (max-width: 1050px) { .header-inner { gap:14px; } .nav-links { gap:15px; font-size:.86rem; } }
 @media (max-width: 940px) { .carplay-hero-grid { grid-template-columns:1fr; } .hero-install-photo { max-width:650px; aspect-ratio:16/10; } .gallery-grid figure,.gallery-grid .gallery-feature { grid-column:span 6; } }
 @media (max-width: 650px) { .before-after-grid,.wide-install-grid,.interest-checks { grid-template-columns:1fr; } .install-card img,.wide-install-grid .install-card img { height:auto; max-height:520px; } .gallery-grid figure,.gallery-grid .gallery-feature { grid-column:1/-1; } .gallery-grid img,.gallery-grid .gallery-feature img { height:auto; } }
 
 
 /* August 2026 functionality pass */
-.nav-diagnostics {
-  padding: 8px 13px;
-  border: 1px solid rgba(213,154,87,.52);
-  border-radius: 999px;
-  color: var(--paper) !important;
-  background: rgba(213,154,87,.09);
-  font-weight: 800;
-}
-.nav-diagnostics:hover, .nav-diagnostics[aria-current="page"] {
-  border-color: var(--copper);
-  background: rgba(213,154,87,.19);
-}
 .email-actions { display:flex; flex-wrap:wrap; align-items:center; gap:10px; }
 .copy-email {
   margin-top: 9px;
@@ -667,7 +642,6 @@ select:disabled { opacity:.66; cursor:not-allowed; }
   .diagnostics-process { grid-template-columns:1fr 1fr; }
 }
 @media (max-width:650px) {
-  .nav-diagnostics { border-radius:12px; text-align:center; }
   .diagnostics-hero { padding:130px 0 72px; }
   .diagnostics-principle-box { padding:32px 24px; }
   .diagnostics-process { grid-template-columns:1fr; }
