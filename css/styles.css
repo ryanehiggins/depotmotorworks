@@ -560,22 +560,6 @@ footer strong { color: var(--paper); }
   gap: 15px;
 }
 .optional { color: #939794; font-weight: 500; }
-.file-input { padding: 10px; cursor: pointer; }
-.file-input::file-selector-button {
-  margin-right: 12px;
-  padding: 8px 12px;
-  border: 0;
-  border-radius: 8px;
-  background: var(--copper);
-  color: #111;
-  font-weight: 800;
-  cursor: pointer;
-}
-.input-help {
-  margin: 7px 2px 0;
-  color: #979b99;
-  font-size: .78rem;
-}
 @media (max-width: 650px) {
   .field-row, .vehicle-grid { grid-template-columns: 1fr; }
   .nav-feature { border-radius: 12px; text-align: center; }
@@ -619,3 +603,72 @@ footer strong { color: var(--paper); }
 @media (max-width: 1050px) { .header-inner { gap:14px; } .nav-links { gap:15px; font-size:.86rem; } .header-carplay { padding:0 16px; font-size:.86rem; } }
 @media (max-width: 940px) { .carplay-hero-grid { grid-template-columns:1fr; } .hero-install-photo { max-width:650px; aspect-ratio:16/10; } .gallery-grid figure,.gallery-grid .gallery-feature { grid-column:span 6; } }
 @media (max-width: 650px) { .before-after-grid,.wide-install-grid,.interest-checks { grid-template-columns:1fr; } .install-card img,.wide-install-grid .install-card img { height:auto; max-height:520px; } .gallery-grid figure,.gallery-grid .gallery-feature { grid-column:1/-1; } .gallery-grid img,.gallery-grid .gallery-feature img { height:auto; } }
+
+
+/* August 2026 functionality pass */
+.nav-diagnostics {
+  padding: 8px 13px;
+  border: 1px solid rgba(213,154,87,.52);
+  border-radius: 999px;
+  color: var(--paper) !important;
+  background: rgba(213,154,87,.09);
+  font-weight: 800;
+}
+.nav-diagnostics:hover, .nav-diagnostics[aria-current="page"] {
+  border-color: var(--copper);
+  background: rgba(213,154,87,.19);
+}
+.email-actions { display:flex; flex-wrap:wrap; align-items:center; gap:10px; }
+.copy-email {
+  margin-top: 9px;
+  padding: 6px 10px;
+  border: 1px solid rgba(20,20,20,.28);
+  border-radius: 999px;
+  color: #29231d;
+  background: rgba(255,255,255,.28);
+  font-size: .76rem;
+  font-weight: 800;
+  cursor: pointer;
+}
+.copy-email:hover { background: rgba(255,255,255,.48); }
+.other-vehicle-field { margin-top: 9px; }
+select:disabled { opacity:.66; cursor:not-allowed; }
+.hp { position:absolute !important; left:-9999px !important; }
+
+.diagnostics-hero {
+  position:relative;
+  overflow:hidden;
+  padding:165px 0 92px;
+  background:radial-gradient(circle at 82% 30%,rgba(213,154,87,.20),transparent 27%),linear-gradient(118deg,#171d20 0%,#0a0d0f 62%);
+}
+.diagnostics-hero::after { content:""; position:absolute; width:650px; height:650px; right:-260px; bottom:-310px; border:1px solid rgba(213,154,87,.18); border-radius:50%; box-shadow:0 0 0 85px rgba(213,154,87,.025),0 0 0 175px rgba(213,154,87,.016); }
+.diagnostics-hero-grid { position:relative; z-index:2; display:grid; grid-template-columns:1.14fr .86fr; gap:68px; align-items:center; }
+.diagnostics-hero h1 { margin:0; font-size:clamp(3.5rem,7vw,7rem); line-height:.98; }
+.diagnostics-hero-card { padding:32px; border:1px solid var(--line); border-radius:var(--radius); background:linear-gradient(180deg,rgba(255,255,255,.07),rgba(255,255,255,.025)); box-shadow:var(--shadow); }
+.diagnostics-hero-card h2 { margin:0 0 18px; font-family:Georgia,"Times New Roman",serif; font-size:1.65rem; }
+.diagnostics-checklist { display:grid; gap:13px; margin:0; padding:0; list-style:none; color:var(--muted); }
+.diagnostics-checklist li { position:relative; padding:0 0 13px 20px; border-bottom:1px solid var(--line); }
+.diagnostics-checklist li::before { content:""; position:absolute; top:.6em; left:0; width:9px; height:9px; border-radius:50%; background:var(--copper); }
+.diagnostics-checklist li:last-child { border-bottom:0; padding-bottom:0; }
+.diagnostics-services, .diagnostics-process-section { background:var(--charcoal); }
+.diagnostics-principle { background:linear-gradient(120deg,rgba(213,154,87,.15),transparent 42%),#0b0e10; }
+.diagnostics-principle-box { display:grid; grid-template-columns:.8fr 1.2fr; gap:54px; align-items:center; padding:56px; border:1px solid rgba(213,154,87,.32); border-radius:30px; background:rgba(255,255,255,.025); box-shadow:var(--shadow); }
+.diagnostics-principle-box strong { color:var(--paper); }
+.diagnostics-bigline { margin:0; color:var(--copper); font-family:Georgia,"Times New Roman",serif; font-size:clamp(2.5rem,5vw,5rem); letter-spacing:-.04em; line-height:.98; }
+.diagnostics-process { display:grid; grid-template-columns:repeat(4,1fr); gap:18px; margin-top:42px; }
+.diagnostics-process article { padding:26px; border:1px solid var(--line); border-radius:20px; background:var(--panel); }
+.diagnostics-process strong { display:block; margin-bottom:10px; color:var(--copper); font-size:.78rem; letter-spacing:.13em; text-transform:uppercase; }
+.diagnostics-process h3 { margin:0 0 9px; }
+.diagnostics-process p { margin:0; color:var(--muted); font-size:.95rem; }
+.diagnostics-inquiry .contact-email, .diagnostics-inquiry .copy-email, .carplay-inquiry .contact-email, .carplay-inquiry .copy-email { color:#29231d; }
+
+@media (max-width:940px) {
+  .diagnostics-hero-grid, .diagnostics-principle-box { grid-template-columns:1fr; }
+  .diagnostics-process { grid-template-columns:1fr 1fr; }
+}
+@media (max-width:650px) {
+  .nav-diagnostics { border-radius:12px; text-align:center; }
+  .diagnostics-hero { padding:130px 0 72px; }
+  .diagnostics-principle-box { padding:32px 24px; }
+  .diagnostics-process { grid-template-columns:1fr; }
+}
