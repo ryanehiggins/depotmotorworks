@@ -1,0 +1,26 @@
+MANDATORY DEPOT WEBSITE DEPLOYMENT CHECKLIST
+===========================================
+These checks are required for EVERY future Depot website deployment:
+
+1. NAVIGATION MUST BE UPDATED IN THE HTML ITSELF.
+   - Do not rely on JavaScript to inject new navigation links.
+   - When a new top-level page is added, physically add its navigation link to EVERY current HTML page, including legacy/alias pages.
+   - Verify the same navigation destinations are present across all pages before packaging.
+
+2. _redirects MUST ALWAYS BE REVIEWED AND INCLUDED.
+   - _redirects must be at the repository root of the deployment ZIP.
+   - Add/update routes for every new or renamed subpage.
+   - Never bury _redirects inside an extra enclosing folder.
+
+3. SITEMAP MUST BE REVIEWED.
+   - Add new public pages to sitemap.xml and confirm canonical URLs.
+
+4. PACKAGE STRUCTURE MUST MATCH THE REPOSITORY ROOT.
+   - index.html, _redirects, sitemap.xml, and top-level pages belong at ZIP root.
+   - css/, js/, and images/ retain their repository-relative paths.
+
+5. PRE-DELIVERY VERIFICATION.
+   - Scan every HTML file in the package for the new nav link.
+   - Verify every referenced new asset exists in the ZIP.
+   - Verify _redirects exists at ZIP root.
+   - Do not call a package deployment-ready until all checks pass.
