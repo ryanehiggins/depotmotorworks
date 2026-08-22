@@ -15,7 +15,6 @@ if (toggle && nav) {
   });
 }
 
-
 // Copy-email fallback for visitors without a configured mail app.
 document.querySelectorAll("[data-copy-email]").forEach((button) => {
   button.addEventListener("click", async () => {
