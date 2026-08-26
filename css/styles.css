@@ -646,3 +646,7 @@ select:disabled { opacity:.66; cursor:not-allowed; }
   .diagnostics-principle-box { padding:32px 24px; }
   .diagnostics-process { grid-template-columns:1fr; }
 }
+
+.footer-social { display: inline-block; margin-top: 6px; }
+.footer-social a { color: var(--paper); text-decoration: none; }
+.footer-social a:hover, .footer-social a:focus-visible { text-decoration: underline; }

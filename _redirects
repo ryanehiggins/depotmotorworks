@@ -1,5 +1,12 @@
 /index.html / 301
-/carplay /carplay-upgrades.html 301
-/diagnostics /diagnostics-troubleshooting.html 301
-/dispatch /depot-dispatch.html 301
-
+/carplay /carplay-upgrades 301
+/carplay.html /carplay-upgrades 301
+/carplay-upgrades.html /carplay-upgrades 301
+/diagnostics /diagnostics-troubleshooting 301
+/diagnostics.html /diagnostics-troubleshooting 301
+/diagnostics-troubleshooting.html /diagnostics-troubleshooting 301
+/dispatch /depot-dispatch 301
+/depot-dispatch.html /depot-dispatch 301
+/membership.html /membership 301
+/jdm.html /jdm 301
+/spotlight/century/index.html /spotlight/century/ 301
