@@ -115,8 +115,8 @@ src="https://www.facebook.com/tr?id=1576387917274548&ev=PageView&noscript=1"
 
   <section class="section signup carplay-inquiry" id="inquiry">
     <div class="container signup-grid">
-      <div><div class="eyebrow">Request a Compatibility Review</div><h2 class="section-title">Tell us what’s in your dash.</h2><p class="copy">Send the vehicle details and we’ll review the likely options and respond by email. If a photo of the current radio or factory screen will help, we’ll ask for it in our reply.</p><div class="contact-block"><div class="contact-label">Call or text</div><a class="contact-phone" href="tel:+12622289782">(262) 228-9782</a><div class="email-actions"><a class="contact-email" href="mailto:carplay@thedepotmotorworks.com">carplay@thedepotmotorworks.com</a><button class="copy-email" type="button" data-copy-email="carplay@thedepotmotorworks.com">Copy email</button></div></div></div>
-      <form class="form" action="https://formspree.io/f/xwlepbaa" method="post">
+      <div><div class="eyebrow">Request a Compatibility Review</div><h2 class="section-title">Tell us what’s in your dash.</h2><p class="copy">Send the vehicle details and we’ll review the likely options and respond by email. A clear photo of the current radio or factory screen is helpful and can be attached below.</p><div class="contact-block"><div class="contact-label">Call or text</div><a class="contact-phone" href="tel:+12622289782">(262) 228-9782</a><div class="email-actions"><a class="contact-email" href="mailto:carplay@thedepotmotorworks.com">carplay@thedepotmotorworks.com</a><button class="copy-email" type="button" data-copy-email="carplay@thedepotmotorworks.com">Copy email</button></div></div></div>
+      <form class="form" action="https://formspree.io/f/xwlepbaa" method="post" enctype="multipart/form-data">
         <input type="hidden" name="_subject" value="OEM+ CarPlay / Android Auto compatibility request"><input type="hidden" name="source" value="OEM+ Technology page">
         <div class="form-grid">
           <div class="field-row"><div><label for="first-name">Name</label><input id="first-name" name="name" type="text" autocomplete="name" required></div><div><label for="carplay-email">Email</label><input id="carplay-email" name="email" type="email" autocomplete="email" required></div></div>
@@ -127,6 +127,11 @@ src="https://www.facebook.com/tr?id=1576387917274548&ev=PageView&noscript=1"
             <div><label for="carplay-model">Model</label><select id="carplay-model" name="vehicle_model" data-vehicle-model required disabled><option value="">Select make first</option></select><input class="other-vehicle-field" data-other-model name="vehicle_model_other" type="text" placeholder="Enter model" hidden></div>
           </div>
           <div><label for="radio">Current radio / navigation system</label><input id="radio" name="current_radio" type="text" placeholder="PCM, iDrive, COMAND, MMI, aftermarket, unknown…"></div>
+          <div>
+            <label for="radio-photo">Photo of current radio / screen <span class="optional">(optional)</span></label>
+            <input id="radio-photo" name="radio_photo" type="file" accept="image/jpeg,image/png,image/webp">
+            <p class="form-note">A clear photo of the current radio or factory screen helps us identify compatible upgrade options.</p>
+          </div>
           <fieldset class="interest-checks"><legend>Interested in</legend><label><input type="checkbox" name="interest" value="Wireless Apple CarPlay"> Wireless Apple CarPlay</label><label><input type="checkbox" name="interest" value="Wireless Android Auto"> Wireless Android Auto</label><label><input type="checkbox" name="interest" value="OEM-style backup camera"> OEM-style backup camera</label><label><input type="checkbox" name="interest" value="Recommendation"> I’d like a recommendation</label></fieldset>
           <div><label for="notes">Additional notes</label><textarea id="notes" name="notes" placeholder="Factory audio package, backup camera interest, known modifications, or questions."></textarea></div>
           <button class="button button-primary" type="submit">Request Compatibility Review</button>
