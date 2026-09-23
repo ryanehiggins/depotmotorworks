@@ -159,6 +159,48 @@ button, input, select, textarea { font: inherit; }
 }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 14px; }
 
+.launch-services { background: var(--charcoal); }
+.launch-service-grid, .pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+  margin-top: 42px;
+}
+.launch-service-card, .pricing-card {
+  padding: 34px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: linear-gradient(180deg, rgba(255,255,255,.065), rgba(255,255,255,.025));
+  box-shadow: var(--shadow);
+}
+.launch-service-card p, .pricing-card p, .pricing-note, .appointment-note { color: var(--muted); }
+.price-kicker {
+  color: var(--copper);
+  font-size: .76rem;
+  font-weight: 800;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+}
+.service-price, .pricing-amount { display: flex; align-items: baseline; gap: 10px; margin: 12px 0 18px; }
+.service-price span, .pricing-amount span {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(3rem, 6vw, 5rem);
+  line-height: 1;
+  color: var(--paper);
+}
+.service-price small, .pricing-amount small { color: var(--copper); font-weight: 800; text-transform: uppercase; letter-spacing: .08em; }
+
+.pricing-section { background: #0b0e10; }
+.pricing-card h3 { margin: 0; font-family: Georgia, "Times New Roman", serif; font-size: 1.55rem; }
+.pricing-card.featured-price { border-color: rgba(213,154,87,.62); background: linear-gradient(145deg,rgba(213,154,87,.16),rgba(255,255,255,.025)); }
+.pricing-note { max-width: 940px; margin: 28px 0 0; }
+.diagnostic-price-line { display:flex; align-items:center; gap:18px; margin:0 0 30px; }
+.diagnostic-price-line > span { color:var(--copper); font-family:Georgia,"Times New Roman",serif; font-size:3.5rem; line-height:1; }
+.diagnostic-price-line strong, .diagnostic-price-line small { display:block; }
+.diagnostic-price-line small { margin-top:4px; color:var(--muted); }
+.diagnostic-offer { background:#0b0e10; }
+.appointment-note { margin-top:28px; padding-left:18px; border-left:3px solid var(--copper); }
+
 .statement { background: var(--charcoal); }
 .statement-grid {
   display: grid;
@@ -333,6 +375,36 @@ button, input, select, textarea { font: inherit; }
 }
 .supporter-note { color: #9b9f9d; font-size: .9rem; }
 
+.standard-membership { background: #0d1113; }
+.standard-membership-heading {
+  display: grid;
+  grid-template-columns: 1.15fr .85fr;
+  gap: 52px;
+  align-items: end;
+}
+.standard-membership-heading .copy { margin-bottom: 8px; }
+.standard-membership-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 42px;
+}
+.standard-membership-grid article {
+  padding: 26px;
+  border-top: 2px solid var(--copper);
+  background: rgba(255,255,255,.035);
+}
+.standard-membership-grid strong {
+  display: block;
+  margin-bottom: 10px;
+  color: #fff;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.2rem;
+}
+.standard-membership-grid span { color: var(--muted); }
+.standard-membership-note { margin: 26px 0 12px; color: #9b9f9d; font-size: .9rem; }
+.standard-membership .text-link { color: var(--copper); font-weight: 800; }
+
 .signup { color: #151515; background: var(--copper); }
 .signup-grid {
   display: grid;
@@ -412,7 +484,8 @@ footer strong { color: var(--paper); }
 .domain { color: var(--copper); font-weight: 800; }
 
 @media (max-width: 940px) {
-  .statement-grid, .supporter-box, .signup-grid { grid-template-columns: 1fr; }
+  .statement-grid, .supporter-box, .signup-grid, .standard-membership-heading { grid-template-columns: 1fr; }
+  .standard-membership-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .cards { grid-template-columns: 1fr 1fr; }
   .roadmap { grid-template-columns: 1fr 1fr; }
   .nav-links {
@@ -433,7 +506,7 @@ footer strong { color: var(--paper); }
 }
 @media (max-width: 650px) {
   .section { padding: 76px 0; }
-  .cards, .roadmap, .photo-grid, .feature-list { grid-template-columns: 1fr; }
+  .cards, .roadmap, .photo-grid, .feature-list, .standard-membership-grid { grid-template-columns: 1fr; }
   .photo, .photo:first-child { min-height: 430px; margin: 0; }
   .supporter-box { padding: 32px 24px; }
   .hero-inner { padding-top: 130px; padding-bottom: 75px; }
@@ -589,6 +662,7 @@ footer strong { color: var(--paper); }
 .interest-checks input { width:auto; }
 @media (max-width: 1050px) { .header-inner { gap:14px; } .nav-links { gap:15px; font-size:.86rem; } }
 @media (max-width: 940px) { .carplay-hero-grid { grid-template-columns:1fr; } .hero-install-photo { max-width:650px; aspect-ratio:16/10; } .gallery-grid figure,.gallery-grid .gallery-feature { grid-column:span 6; } }
+@media (max-width: 760px) { .launch-service-grid, .pricing-grid { grid-template-columns:1fr; } }
 @media (max-width: 650px) { .before-after-grid,.wide-install-grid,.interest-checks { grid-template-columns:1fr; } .install-card img,.wide-install-grid .install-card img { height:auto; max-height:520px; } .gallery-grid figure,.gallery-grid .gallery-feature { grid-column:1/-1; } .gallery-grid img,.gallery-grid .gallery-feature img { height:auto; } }
 
 
