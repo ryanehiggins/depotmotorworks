@@ -137,7 +137,7 @@ button, input, select, textarea { font: inherit; }
   overflow: hidden;
   background:
     linear-gradient(90deg, rgba(7,9,10,.96) 0%, rgba(7,9,10,.78) 45%, rgba(7,9,10,.4) 100%),
-    url("../images/depot-hero-concept.png") center/cover no-repeat;
+    url("../images/depot-hero-concept.webp") center/cover no-repeat;
 }
 .hero-inner {
   position: relative;
@@ -724,6 +724,18 @@ select:disabled { opacity:.66; cursor:not-allowed; }
 .footer-social { display: inline-block; margin-top: 6px; }
 .footer-social a { color: var(--paper); text-decoration: none; }
 .footer-social a:hover, .footer-social a:focus-visible { text-decoration: underline; }
+.footer-pages { display: inline-block; margin-top: 8px; }
+.footer-pages a { color: var(--paper); text-decoration: none; }
+.footer-pages a:hover, .footer-pages a:focus-visible { text-decoration: underline; }
+.not-found-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px 16px;
+  margin-top: 28px;
+}
+.not-found-links a { color: var(--copper); font-weight: 750; }
+.not-found-links a:hover, .not-found-links a:focus-visible { text-decoration: underline; }
 
 /* Thank-you page */
 .thank-you-hero {
