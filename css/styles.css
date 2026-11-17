@@ -99,10 +99,12 @@ button, input, select, textarea { font: inherit; }
 }
 .brand {
   display: flex;
+  flex: 0 0 auto;
   align-items: center;
   gap: 13px;
   font-weight: 850;
   letter-spacing: .045em;
+  white-space: nowrap;
 }
 .brand-mark {
   width: 40px;
@@ -117,11 +119,35 @@ button, input, select, textarea { font: inherit; }
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 24px;
+  gap: 16px;
   color: var(--muted);
-  font-size: .93rem;
+  font-size: .88rem;
 }
 .nav-links a { white-space: nowrap; }
+.nav-contact {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  min-height: 38px;
+  padding: 0 14px;
+  border-radius: 999px;
+  color: #111;
+  background: var(--copper);
+  font-weight: 800;
+  line-height: 1;
+  white-space: nowrap;
+  text-decoration: none;
+}
+.nav-contact:hover,
+.nav-contact:focus-visible {
+  color: #111;
+  background: #e4b074;
+}
+.nav-contact:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 3px;
+}
 .menu-toggle {
   display: none;
   border: 0;
@@ -489,6 +515,8 @@ footer strong { color: var(--paper); }
   .standard-membership-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .cards { grid-template-columns: 1fr 1fr; }
   .roadmap { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 1032px) {
   .nav-links {
     position: absolute;
     top: 76px;
@@ -497,12 +525,18 @@ footer strong { color: var(--paper); }
     display: none;
     flex-direction: column;
     align-items: stretch;
+    max-height: calc(100dvh - 96px);
+    overflow: auto;
     padding: 20px;
     border: 1px solid var(--line);
     border-radius: 18px;
     background: #111719;
   }
   .nav-links.open { display: flex; }
+  .nav-links .nav-contact {
+    min-height: 48px;
+    margin-top: 6px;
+  }
   .menu-toggle { display: block; }
 }
 @media (max-width: 650px) {
@@ -631,7 +665,7 @@ footer strong { color: var(--paper); }
 /* Version 2: service-led positioning + OEM+ technology portfolio */
 .hero-kicker { margin: 24px 0 0; color: var(--copper); font-size: clamp(1.15rem,2.3vw,1.65rem); font-weight: 850; letter-spacing: .01em; }
 .specialty-card { background: linear-gradient(160deg,#1b2226,#171d20); }
-.anchor-offset { position:absolute; transform:translateY(-100px); }
+#contact { scroll-margin-top: 96px; }
 
 .carplay-hero-grid { display:grid; grid-template-columns: 1.03fr .97fr; gap:56px; align-items:center; }
 .carplay-photo-hero { padding-bottom:80px; }
@@ -661,7 +695,16 @@ footer strong { color: var(--paper); }
 .interest-checks legend { padding:0 8px; color:var(--muted); font-size:.84rem; font-weight:750; }
 .interest-checks label { display:flex; align-items:center; gap:9px; margin:0; color:var(--paper); font-weight:600; }
 .interest-checks input { width:auto; }
-@media (max-width: 1050px) { .header-inner { gap:14px; } .nav-links { gap:15px; font-size:.86rem; } }
+@media (max-width: 1240px) {
+  .header-inner { gap: 12px; }
+  .nav-links { gap: 12px; font-size: .84rem; }
+  .nav-contact { padding: 0 12px; }
+}
+@media (max-width: 1040px) {
+  .header-inner { gap: 10px; }
+  .nav-links { gap: 10px; font-size: .8rem; }
+  .nav-contact { min-height: 36px; padding: 0 10px; }
+}
 @media (max-width: 940px) { .carplay-hero-grid { grid-template-columns:1fr; } .hero-install-photo { max-width:650px; aspect-ratio:16/10; } .gallery-grid figure,.gallery-grid .gallery-feature { grid-column:span 6; } }
 @media (max-width: 760px) { .launch-service-grid, .pricing-grid { grid-template-columns:1fr; } }
 @media (max-width: 650px) { .before-after-grid,.wide-install-grid,.interest-checks { grid-template-columns:1fr; } .install-card img,.wide-install-grid .install-card img { height:auto; max-height:520px; } .gallery-grid figure,.gallery-grid .gallery-feature { grid-column:1/-1; } .gallery-grid img,.gallery-grid .gallery-feature img { height:auto; } }

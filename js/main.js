@@ -8,9 +8,18 @@ if (toggle && nav) {
   });
 
   nav.querySelectorAll("a").forEach((link) => {
-    link.addEventListener("click", () => {
+    link.addEventListener("click", (event) => {
       nav.classList.remove("open");
       toggle.setAttribute("aria-expanded", "false");
+      if (link.hash !== "#contact") return;
+      const target = document.querySelector("#contact");
+      if (!target) return;
+      const here = location.pathname.replace(/\/index\.html$/, "/") || "/";
+      const there = new URL(link.href, location.href).pathname.replace(/\/index\.html$/, "/") || "/";
+      if (here !== there) return;
+      event.preventDefault();
+      target.scrollIntoView({ behavior: "smooth", block: "start" });
+      if (location.hash !== "#contact") history.pushState(null, "", "#contact");
     });
   });
 }
