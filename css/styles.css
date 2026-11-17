@@ -121,6 +121,7 @@ button, input, select, textarea { font: inherit; }
   color: var(--muted);
   font-size: .93rem;
 }
+.nav-links a { white-space: nowrap; }
 .menu-toggle {
   display: none;
   border: 0;
