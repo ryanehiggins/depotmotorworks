@@ -5,9 +5,9 @@ Upload the contents of this package to the ROOT of the existing GitHub repositor
 NEW FILES
 /membership.html
 /css/membership.css
-/images/membership-lounge-hero.jpg
-/images/lounge-concept-sketch-square.jpg
-/images/detail-bay-concept-sketch-square.jpg
+/images/membership-lounge-hero.webp
+/images/lounge-concept-sketch-square.webp
+/images/detail-bay-concept-sketch-square.webp
 
 REPLACE EXISTING FILES
 /js/main.js
