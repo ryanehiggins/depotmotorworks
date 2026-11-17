@@ -194,6 +194,7 @@ button, input, select, textarea { font: inherit; }
 .pricing-card h3 { margin: 0; font-family: Georgia, "Times New Roman", serif; font-size: 1.55rem; }
 .pricing-card.featured-price { border-color: rgba(213,154,87,.62); background: linear-gradient(145deg,rgba(213,154,87,.16),rgba(255,255,255,.025)); }
 .pricing-note { max-width: 940px; margin: 28px 0 0; }
+.pricing-section .hero-actions { margin-top: 28px; }
 .diagnostic-price-line { display:flex; align-items:center; gap:18px; margin:0 0 30px; }
 .diagnostic-price-line > span { color:var(--copper); font-family:Georgia,"Times New Roman",serif; font-size:3.5rem; line-height:1; }
 .diagnostic-price-line strong, .diagnostic-price-line small { display:block; }
